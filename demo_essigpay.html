@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>EssigPay</title>
+  </head>
+  <body>
+    <script type="text/javascript">
+      window.utag_data = {
+        paybylink_tipo_pagamento: "v",
+        paybylink_tipo_pos: "vpos",
+
+        // parametri comuni:
+        id_cliente: "123456789",
+        paybylink_id_prodotto: "987654",
+        paybylink_tipo_cliente: "business",
+        paybylink_importo: "123.45"
+      };
+    </script>
+    <!-- Tealium Universal Tag -->
+    <script type="text/javascript">
+      (function(a, b, c, d) {
+        a = "https://tags.tiqcdn.com/utag/unipolsai/essig/dev/utag.js";
+        b = document;
+        c = "script";
+        d = b.createElement(c);
+        d.src = a;
+        d.type = "text/java" + c;
+        d.async = true;
+        a = b.getElementsByTagName(c)[0];
+        a.parentNode.insertBefore(d, a);
+      })();
+    </script>
+    <!-- end Tealium Universal Tag -->
+
+    <h1>Demo EssigPay</h1>
+    <a href="demo_pega_form.html">Go to PEGA - form</a>
+  </body>
+</html>
